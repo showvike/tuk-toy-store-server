@@ -1,0 +1,79 @@
+[
+  {
+    "picture_url": "https://i.ibb.co/Yyh3HjM/captain-america.webp",
+    "name": "Captain America",
+    "seller_name": "",
+    "seller_email": "",
+    "sub_category": "marvel",
+    "price": "20",
+    "rating": "4.5",
+    "available_quantity": "100+",
+    "detail_description": "Captain America the Avenger"
+  },
+  {
+    "picture_url": "https://i.ibb.co/JBpmBq5/dc.webp",
+    "name": "Superman & Batman",
+    "seller_name": "",
+    "seller_email": "",
+    "sub_category": "DC",
+    "price": "50",
+    "rating": "4.2",
+    "available_quantity": "150+",
+    "detail_description": "DC Heros of the DC Universe"
+  },
+  {
+    "picture_url": "https://i.ibb.co/MV8hVNj/iron-man.webp",
+    "name": "Iron Man",
+    "seller_name": "",
+    "seller_email": "",
+    "sub_category": "marvel",
+    "price": "25",
+    "rating": "4.7",
+    "available_quantity": "100+",
+    "detail_description": "Iron Man the Avenger"
+  },
+  {
+    "picture_url": "https://i.ibb.co/NWrMM8S/spider-man.webp",
+    "name": "Spider Man",
+    "seller_name": "",
+    "seller_email": "",
+    "sub_category": "marvel",
+    "price": "23",
+    "rating": "4.4",
+    "available_quantity": "100+",
+    "detail_description": "Spider Man the Avenger"
+  },
+  {
+    "picture_url": "https://i.ibb.co/FHrGzsy/star-wars.webp",
+    "name": "Star Wars",
+    "seller_name": "",
+    "seller_email": "",
+    "sub_category": "star wars",
+    "price": "21",
+    "rating": "4.2",
+    "available_quantity": "150+",
+    "detail_description": "Star Wars in the Star and the Space"
+  },
+  {
+    "picture_url": "https://i.ibb.co/6bPYwPw/asoka-tano.webp",
+    "name": "Asoka Tano",
+    "seller_name": "",
+    "seller_email": "",
+    "sub_category": "star wars",
+    "price": "25",
+    "rating": "4.3",
+    "available_quantity": "120+",
+    "detail_description": "Star Wars in the Star and the Space Asoka Tano"
+  },
+  {
+    "picture_url": "https://i.ibb.co/CPgnJDt/wonder-woman.webp",
+    "name": "Wonder Woman",
+    "seller_name": "",
+    "seller_email": "",
+    "sub_category": "DC",
+    "price": "44",
+    "rating": "4.4",
+    "available_quantity": "130+",
+    "detail_description": "DC Heros of the DC Universe Wonder Woman"
+  }
+]

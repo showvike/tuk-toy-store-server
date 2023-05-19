@@ -29,11 +29,22 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     // await client.connect();
 
-    const tukToyDB = client.db("tukToyDB");
-    const toysCollection = tukToyDB.collection("toysCollection");
+    const tukToyStoreDB = client.db("tukToyStoreDB");
+    const toysCollection = tukToyStoreDB.collection("toysCollection");
 
-    app.get("/connect", (req, res) => {
-      res.send({ message: "Database connected." });
+    app.get("/toys", async (req, res) => {
+      const queries = req.query;
+      const query = { sub_category: queries.sub_category };
+      const limit = parseInt(queries.limit);
+      let options = {};
+      if (Object.keys(query).length) {
+        options = {
+          projection: { picture_url: 1, name: 1, price: 1, rating: 1 },
+        };
+      }
+      const cursor = toysCollection.find(query, options).limit(limit);
+      const result = await cursor.toArray();
+      res.send(result);
     });
 
     // Send a ping to confirm a successful connection
