@@ -34,10 +34,12 @@ async function run() {
 
     app.get("/toys", async (req, res) => {
       const queries = req.query;
-      const query = { sub_category: queries.sub_category };
-      const limit = parseInt(queries.limit);
+      let limit = 20;
+      let query = {};
       let options = {};
-      if (Object.keys(query).length) {
+      if (Object.keys(queries).length) {
+        query = { sub_category: queries.sub_category };
+        limit = parseInt(queries.limit);
         options = {
           projection: { picture_url: 1, name: 1, price: 1, rating: 1 },
         };
