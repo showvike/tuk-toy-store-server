@@ -34,17 +34,23 @@ async function run() {
 
     app.get("/toys", async (req, res) => {
       const queries = req.query;
-      let limit = 20;
+      const { sub_category, limit, name } = queries;
+
       let query = {};
+      let lt = 20;
       let options = {};
-      if (Object.keys(queries).length) {
-        query = { sub_category: queries.sub_category };
-        limit = parseInt(queries.limit);
+
+      if (name) {
+        query = { name };
+      } else if (sub_category && limit) {
+        query = { sub_category };
+        lt = parseInt(limit);
         options = {
           projection: { picture_url: 1, name: 1, price: 1, rating: 1 },
         };
       }
-      const cursor = toysCollection.find(query, options).limit(limit);
+
+      const cursor = toysCollection.find(query, options).limit(lt);
       const result = await cursor.toArray();
       res.send(result);
     });
