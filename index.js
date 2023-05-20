@@ -34,7 +34,7 @@ async function run() {
 
     app.get("/toys", async (req, res) => {
       const queries = req.query;
-      const { sub_category, limit, name } = queries;
+      const { sub_category, limit, name, seller_email } = queries;
 
       let query = {};
       let lt = 20;
@@ -48,6 +48,8 @@ async function run() {
         options = {
           projection: { picture_url: 1, name: 1, price: 1, rating: 1 },
         };
+      } else if (seller_email) {
+        query = { seller_email };
       }
 
       const cursor = toysCollection.find(query, options).limit(lt);
