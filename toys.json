@@ -4,10 +4,10 @@
     "name": "Captain America",
     "seller_name": "",
     "seller_email": "",
-    "sub_category": "marvel",
-    "price": "20",
-    "rating": "4.5",
-    "available_quantity": "100+",
+    "sub_category": "Marvel",
+    "price": 20,
+    "rating": 4.5,
+    "available_quantity": 100,
     "detail_description": "Captain America the Avenger"
   },
   {
@@ -16,9 +16,9 @@
     "seller_name": "",
     "seller_email": "",
     "sub_category": "DC",
-    "price": "50",
-    "rating": "4.2",
-    "available_quantity": "150+",
+    "price": 50,
+    "rating": 4.2,
+    "available_quantity": 150,
     "detail_description": "DC Heros of the DC Universe"
   },
   {
@@ -26,10 +26,10 @@
     "name": "Iron Man",
     "seller_name": "",
     "seller_email": "",
-    "sub_category": "marvel",
-    "price": "25",
-    "rating": "4.7",
-    "available_quantity": "100+",
+    "sub_category": "Marvel",
+    "price": 25,
+    "rating": 4.7,
+    "available_quantity": 100,
     "detail_description": "Iron Man the Avenger"
   },
   {
@@ -37,10 +37,10 @@
     "name": "Spider Man",
     "seller_name": "",
     "seller_email": "",
-    "sub_category": "marvel",
-    "price": "23",
-    "rating": "4.4",
-    "available_quantity": "100+",
+    "sub_category": "Marvel",
+    "price": 23,
+    "rating": 4.4,
+    "available_quantity": 100,
     "detail_description": "Spider Man the Avenger"
   },
   {
@@ -48,10 +48,10 @@
     "name": "Star Wars",
     "seller_name": "",
     "seller_email": "",
-    "sub_category": "star wars",
-    "price": "21",
-    "rating": "4.2",
-    "available_quantity": "150+",
+    "sub_category": "Star Wars",
+    "price": 21,
+    "rating": 4.2,
+    "available_quantity": 150,
     "detail_description": "Star Wars in the Star and the Space"
   },
   {
@@ -59,10 +59,10 @@
     "name": "Asoka Tano",
     "seller_name": "",
     "seller_email": "",
-    "sub_category": "star wars",
-    "price": "25",
-    "rating": "4.3",
-    "available_quantity": "120+",
+    "sub_category": "Star Wars",
+    "price": 25,
+    "rating": 4.3,
+    "available_quantity": 120,
     "detail_description": "Star Wars in the Star and the Space Asoka Tano"
   },
   {
@@ -71,9 +71,64 @@
     "seller_name": "",
     "seller_email": "",
     "sub_category": "DC",
-    "price": "44",
-    "rating": "4.4",
-    "available_quantity": "130+",
+    "price": 44,
+    "rating": 4.4,
+    "available_quantity": 130,
     "detail_description": "DC Heros of the DC Universe Wonder Woman"
+  },
+  {
+    "picture_url": "https://www.lego.com/cdn/cs/set/assets/bltb7e551b658488002/41588.jpg?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1",
+    "name": "Joker",
+    "seller_name": "Showvike Mondal Ovi",
+    "seller_email": "showvike@gmail.com",
+    "sub_category": "DC",
+    "price": 27,
+    "rating": 4.8,
+    "available_quantity": 51,
+    "detail_description": "Joker from DC Universe JOKER"
+  },
+  {
+    "picture_url": "https://www.lego.com/cdn/cs/set/assets/blt039639a46cc4ccdb/40615_alt3.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1",
+    "name": "Tusken Raider",
+    "seller_name": "Showvike Mondal Ovi",
+    "seller_email": "showvike@gmail.com",
+    "sub_category": "Star Wars",
+    "price": 10,
+    "rating": 3,
+    "available_quantity": 15,
+    "detail_description": "Tusken Raider from Star Wars"
+  },
+  {
+    "picture_url": "https://www.lego.com/cdn/cs/set/assets/blt2abe9b9fd1984406/41590.jpg?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1",
+    "name": "Baby Iron Man",
+    "seller_name": "Showvike Mondal Ovi",
+    "seller_email": "showvike@gmail.com",
+    "sub_category": "Marvel",
+    "price": 12,
+    "rating": 4,
+    "available_quantity": 19,
+    "detail_description": "The Baby Version of the Iron Man"
+  },
+  {
+    "picture_url": "https://www.lego.com/cdn/cs/set/assets/blt786d9a5e1bafd414/76217.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1",
+    "name": "Groot",
+    "seller_name": "Tuk",
+    "seller_email": "tuk@toy.store",
+    "sub_category": "Marvel",
+    "price": 55,
+    "rating": 4.9,
+    "available_quantity": 35,
+    "detail_description": "I am Groot Groot is I am"
+  },
+  {
+    "picture_url": "https://www.lego.com/cdn/cs/set/assets/bltd0d0d4de475d2d9b/41601.jpg?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1",
+    "name": "Cybrog",
+    "seller_name": "Toy",
+    "seller_email": "toy@tuk.store",
+    "sub_category": "DC",
+    "price": 24,
+    "rating": 4.2,
+    "available_quantity": 27,
+    "detail_description": "Cyber Man"
   }
 ]

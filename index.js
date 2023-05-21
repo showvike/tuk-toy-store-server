@@ -34,11 +34,12 @@ async function run() {
 
     app.get("/toys", async (req, res) => {
       const queries = req.query;
-      const { sub_category, limit, name, seller_email } = queries;
+      const { sub_category, limit, name, seller_email, price } = queries;
 
       let query = {};
       let lt = 20;
       let options = {};
+      let sort = {};
 
       if (name) {
         query = { name };
@@ -51,8 +52,11 @@ async function run() {
       } else if (seller_email) {
         query = { seller_email };
       }
+      if (price) {
+        sort = { price: parseInt(price) };
+      }
 
-      const cursor = toysCollection.find(query, options).limit(lt);
+      const cursor = toysCollection.find(query, options).limit(lt).sort(sort);
       const result = await cursor.toArray();
       res.send(result);
     });
