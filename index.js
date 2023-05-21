@@ -32,6 +32,7 @@ async function run() {
     const tukToyStoreDB = client.db("tukToyStoreDB");
     const toysCollection = tukToyStoreDB.collection("toysCollection");
 
+    // get api various get operations
     app.get("/toys", async (req, res) => {
       const queries = req.query;
       const { sub_category, limit, name, seller_email, price } = queries;
@@ -61,6 +62,7 @@ async function run() {
       res.send(result);
     });
 
+    // get api for only one toy
     app.get("/toy/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
@@ -68,12 +70,14 @@ async function run() {
       res.send(result);
     });
 
+    // post api for adding a toy
     app.post("/add", async (req, res) => {
       const toy = req.body;
       const result = await toysCollection.insertOne(toy);
       res.send(result);
     });
 
+    // patch api for updating a toy
     app.patch("/update/:id", async (req, res) => {
       const id = req.params.id;
       const toy = req.body;
@@ -90,6 +94,7 @@ async function run() {
       res.send(result);
     });
 
+    // delete api for deleting a toy
     app.delete("/delete/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
