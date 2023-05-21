@@ -73,7 +73,6 @@ async function run() {
     // post api for adding a toy
     app.post("/add", async (req, res) => {
       const toy = req.body;
-      console.log(toy);
       const result = await toysCollection.insertOne(toy);
       res.send(result);
     });
